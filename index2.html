@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: L; }
+.item2 { grid-area: header; }
+.item3 { grid-area: R; }
+.item4 { grid-area: leftH;
+    background-color:white; }
+.item5 { grid-area: midH;
+    background-color:white; }
+.item6 { grid-area: rightH; 
+    background-color:white;}
+.item7 { grid-area: leftL;
+    background-color:white; }
+.item8 { grid-area: midL;
+    background-color:white; }
+.item9 { grid-area: rightL;
+    background-color:white; }
+.item10 { grid-area: footer; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'L header header header header header header R'
+    'L leftH leftH midH midH rightH rightH R'
+    'L leftL leftL midL midL rightL rightL R'
+    'L footer footer footer footer footer footer R';
+  grid-gap: 10px;
+  background-color:#F7F7F7;
+  padding: 10px;
+}
+
+.grid-container > div {
+ 
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+<div class="item1">L</div>
+  <div class="item2">Header</div>
+  <div class="item3">R</div>
+  <div class="item4">
+      <img src="../images/circle.png" alt=""  width="30">
+      <p>Tooth inspection</p>
+       <p>Comprehensive review of the mouth
+        and detection of broken teeth
+        and other threats.</p>
+    </div>  
+  <div class="item5">mid <img src="../images/circle.png" alt=""  width="30">
+    <p>Tooth inspection</p>
+     <p>Comprehensive review of the mouth
+      and detection of broken teeth
+      and other threats.</p> </div>
+  <div class="item6">Right
+    <img src="../images/circle.png" alt=""  width="30">
+    <p>Tooth inspection</p>
+     <p>Comprehensive review of the mouth
+      and detection of broken teeth
+      and other threats.</p>
+  </div>
+  
+  <div class="item7">left
+    <img src="../images/circle.png" alt=""  width="30">
+    <p>Tooth inspection</p>
+     <p>Comprehensive review of the mouth
+      and detection of broken teeth
+      and other threats.</p>
+  </div>
+  <div class="item8">mid
+    <img src="../images/circle.png" alt=""  width="30">
+    <p>Tooth inspection</p>
+     <p>Comprehensive review of the mouth
+      and detection of broken teeth
+      and other threats.</p>
+  </div>
+  <div class="item9">right<img src="../images/circle.png" alt=""  width="30">
+    <p>Tooth inspection</p>
+     <p>Comprehensive review of the mouth
+      and detection of broken teeth
+      and other threats.</p></div>
+  <div class="item10">footer</div>
+  
+</div>
+
+</body>
+</html>

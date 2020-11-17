@@ -1,0 +1,23 @@
+@media  
+(max-width:768px)  {
+   
+    #topnavbar > .container-1 > .openinghours  {
+        display: none;
+    }
+    #topnavbar > .container-1 > #socialmedia {
+        align-items: center;
+        
+    }
+
+    #showcase {
+        background: #DEDEDE important;
+        width: 100%;
+    }
+
+    #showcase .container2 img   {
+        display: flex;
+        justify-content: center;
+    }      
+  }
+
+    
